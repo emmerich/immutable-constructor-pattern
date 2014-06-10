@@ -1,2 +1,2 @@
-immutable-javascript-constructor-pattern
+Constructor Pattern for Immutable JavaScript Objects
 ========================================
