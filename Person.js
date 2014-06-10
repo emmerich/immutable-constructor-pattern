@@ -2,12 +2,10 @@
     "use strict";
     
     function Person(spec) {
-    
-        var first_name = spec.firstName,
-            last_name = spec.lastName,
-        
+        var firstName = spec.firstName,
+            lastName = spec.lastName,
             getName = function() {
-                return first_name + " " + last_name;
+                return firstName + " " + lastName;
             };
         
             return Object.freeze({
@@ -16,7 +14,7 @@
     };
     
     var james_bond = new Person("James", "Bond");
-    console.log(james_bond.first_name);
+    console.log(james_bond.firstName);
     console.log(james_bond.getName());
     
     james_bond.getName = function() {
